@@ -24,7 +24,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'btn-bg': '#B68C5A',
 
                     }
                 }
@@ -34,10 +34,21 @@
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/03de7fa4eb.js" crossorigin="anonymous">
     </script>
+
+    <!-- poppin font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font -->
+    <style>
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body class="framond">
+<body class="">
 
     <header class="w-auto lg:w-11/12 m-auto ">
+        <!-- navbar  -->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -77,10 +88,28 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn normal-case text-white bg-[#B68C5A]">Free Consultation</a>
+                  <a class="btn normal-case text-white bg-btn-bg poppins">Free Consultation</a>
                 </div>
               </div>
         </nav>
+        <!-- banner -->
+        <div>
+            <div class="hero min-h-screen" style="background-image: url('./images/banner.png');">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold framond">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5 poppins text-sm font-light">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                    <div class=" flex gap-5">
+                        <input type="text" placeholder="Search your services" class="input input-bordered w-full pr-16" /> 
+                        <button class="btn bg-btn-bg  top-0 right-0  normal-case text-white border-none poppins">Search</button>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+        </div>
 
     </header>
     <main class="w-auto lg:w-11/12 m-auto "></main>
